@@ -24,5 +24,8 @@ module SampleApp
     config.active_record.raise_in_transactional_callbacks = true
 
     config.assets.initialize_on_precompile = false
+
+    # Authenticity token in remote forms
+    config.action_view.embed_authenticity_token_in_remote_forms = true
   end
 end
